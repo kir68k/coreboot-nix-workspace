@@ -6,6 +6,13 @@ Minimal `flake.nix` that loads `shell.nix` with aliases and packages required fo
 EDK2 compilation is broken even with this, at least when running nix3 on openSUSE TW.
 Upstream still uses GCC5, which does not exist in Nixpkgs, and Ubuntu 18.04 LTS is the last version to even support it.
 
+## How to use
+```bash
+git clone https://github.com/kir68k/coreboot-nix-workspace
+git submodule update --remote
+```
+Then `git submodule update --init --checkout` in the `coreboot/` directory.
+
 ## Included packages
 Included packages:
 - gnat11
