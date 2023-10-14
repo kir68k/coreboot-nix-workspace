@@ -2,7 +2,7 @@
 with pkgs;
   mkShellNoCC {
     buildInputs = [
-      gnat        # GCC with the ADA compiler, EDK2 still doesn't compile for me using this
+      gnat          # GCC with the ADA compiler, EDK2 still doesn't compile for me using this
       acpica-tools  # IASL
       m4
       flex
@@ -13,11 +13,12 @@ with pkgs;
       pkg-config
       zlib
       xz
-      nasm          # For assembly
-      clang         ####################
-      llvm          ## If you want to use LLVM to compile coreboot
-      libllvm       ## NOTE: this is experimental and not bound to work
-      lld           ####################
+      nasm          # For assembly      ######################################################
+      llvmPackages_16.libllvm           ## If you want to use LLVM to compile coreboot      ##
+      llvmPackages_16.libcxxClang       ## NOTE: this is experimental and not bound to work ##
+      llvmPackages_16.libcxxabi         ######################################################
+      llvmPackages_16.lld
+      llvmPackages.libunwind
       ncurses       # Coreboot has a menu/nconfig just like the Linux kernel
       automake      # Makefile generator
       autoconf      # Configure script generator
