@@ -10,6 +10,8 @@ Upstream still uses GCC5, which does not exist in Nixpkgs, and Ubuntu 18.04 LTS 
 ```bash
 git clone https://github.com/kir68k/coreboot-nix-workspace
 git submodule update --remote
+
+nix develop
 ```
 Then `git submodule update --init --checkout` in the `coreboot/` directory.
 

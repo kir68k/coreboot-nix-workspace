@@ -18,6 +18,6 @@
     (system: let
       pkgs = nixpkgs.legacyPackages.${system};
     in {
-      devShells.default = import ./shell.nix {inherit pkgs;};
+      devShells.default = import ./shell.nix { inherit pkgs; };
     });
 }
