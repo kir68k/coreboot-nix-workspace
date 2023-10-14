@@ -52,3 +52,6 @@ tarballs/
 #
 # direnv flake inputs
 .direnv
+
+# Temporary arbitrary files
+tmp/
