@@ -14,17 +14,17 @@ with pkgs;
       zlib
       xz
       nasm          # For assembly      ######################################################
-      llvmPackages_16.libllvm           ## If you want to use LLVM to compile coreboot      ##
-      llvmPackages_16.libcxxClang       ## NOTE: this is experimental and not bound to work ##
-      llvmPackages_16.libcxxabi         ######################################################
-      llvmPackages_16.lld
-      llvmPackages.libunwind
+      llvmPackages_17.libllvm           ## If you want to use LLVM to compile coreboot      ##
+      llvmPackages_17.libcxxClang       ## NOTE: this is experimental and not bound to work ##
+      llvmPackages_17.libcxxabi         ######################################################
+      llvmPackages_17.lld
+      llvmPackages_17.libunwind
       ncurses       # Coreboot has a menu/nconfig just like the Linux kernel
       automake      # Makefile generator
       autoconf      # Configure script generator
       libuuid       # Tools for working with UUIDs
       glibc         # GNU C Standard Library
-      gnumake
+      gnumake       # GNU `make` tool
       python311Full # Used for e.g. ME-Cleaner
     ];
 
